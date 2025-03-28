@@ -21,29 +21,42 @@ def registrar_criterios_busca(request: Request):
             return make_response(json.dumps({"status": "error", "message": "Requisição inválida (JSON esperado)"}), 400)
 
         # Obtém os parâmetros do JSON recebido
-        dialogflow_session_id = request_json.get("dialogflowSessionId", "desconhecido")
-        property_type = request_json.get("propertyType", "Desconhecido")
-        transaction_type = request_json.get("transactionType", "Desconhecido")
-        usage_type = request_json.get("usageType", "Desconhecido")
+        dialogflow_session_id = request_json.get("dialogflowSessionId", "Desconhecido")
+        transaction_type = request_json.get("transactionType", "N/A")
+        property_type = request_json.get("propertyType", "N/A")
 
         location = request_json.get("location", {})
-        city = location.get("city", "Não informado")
-        state = location.get("state", "Não informado")
-        neighborhood = location.get("neighborhood", "Não informado")
-        address = location.get("address", "Não informado")
-        zone = location.get("zone", "Não informado")
+        city = location.get("city", "N/A")
+        state = location.get("state", "N/A")
+        neighborhood = location.get("neighborhood", "N/A")
+        address = location.get("address", "N/A")
+        complement = location.get("complement", "N/A")
+        zone = location.get("zone", "N/A")  
+       
 
-        list_price = request_json.get("listPrice", {})
-        min_price = list_price.get("min", 0)
-        max_price = list_price.get("max", 0)
-        price_description = list_price.get("descricao", "Não informado")
+       
+        bedroom = request_json.get("bedroom", -1)
+        bathroom = request_json.get("bathroom", -1)
+        suite = request_json.get("suite", -1)
 
-        living_area = request_json.get("livingArea", 0)
-        bedrooms = request_json.get("bedroom", 0)
-        bathrooms = request_json.get("bathroom", 0)
-        suites = request_json.get("suite", 0)
-        garages = request_json.get("garage", 0)
+        floor = request_json.get("floor", -1)
+        unitFloor = request_json.get("unitFloor", -1)
+        buildings = request_json.get("buildings", -1)
+        garages = request_json.get("garage", -1)
+
+        area = request_json.get("area", {})
+        lotArea = area.get("lotArea", -1)
+        livingArea = area.get("livingArea", -1)
+
+        price = request_json.get("price", {})
+        valorMin = price.get("valorMin", -1)
+        valorMax = price.get("valorMax", -1)
+        description = price.get("description", None)
+        usage_type = request_json.get("usageType", "N/A")
+
         features = request_json.get("features", [])
+        especialRequests = request_json.get("especialRequests", [])
+        
         if not isinstance(features, list):
             features = []
 
@@ -54,35 +67,45 @@ def registrar_criterios_busca(request: Request):
         Tipo de Imóvel: {property_type}
         Tipo de Transação: {transaction_type}
         Tipo de Uso: {usage_type}
-        Localização: {city}, {state}, {neighborhood}, {address}, {zone}
-        Preço: Min {min_price}, Max {max_price}, Descrição: {price_description}
-        Área: {living_area}m², Quartos: {bedrooms}, Banheiros: {bathrooms}, Suítes: {suites}, Vagas: {garages}
+        Localização: {city}, {state}, {neighborhood}, {address},{complement}, {zone}
+        Preço: Min {valorMin}, Max {valorMax}
+        Andar: {floor}{unitFloor}{buildings} andares,
+        Área: {lotArea + livingArea}m², Quartos: {bedroom}, Banheiros: {bathroom}, Suítes: {suite}, Vagas: {garages}
         Features: {', '.join(features) if features else 'Nenhuma'}
+        Pedidos: {', '.join(especialRequests) if especialRequests else 'Nenhuma'}
         """)
 
         # Salvar no Firestore
         success = save_on_firestore(dialogflow_session_id, {
-            "propertyType": property_type,
             "transactionType": transaction_type,
-            "usageType": usage_type,
+            "propertyType": property_type,
             "location": {
                 "city": city,
                 "state": state,
                 "neighborhood": neighborhood,
                 "address": address,
+                "complement": complement,
                 "zone": zone
             },
-            "listPrice": {
-                "min": min_price,
-                "max": max_price,
-                "descricao": price_description
-            },
-            "livingArea": living_area,
-            "bedroom": bedrooms,
-            "bathroom": bathrooms,
-            "suite": suites,
+            "bedroom": bedroom,
+            "bathroom": bathroom,
+            "suite": suite,
+            "floor": floor,
+            "unitFloor": unitFloor,
+            "buildings": buildings,
             "garage": garages,
-            "features": features
+            "area": {
+                "lotArea": lotArea,
+                "livingArea": livingArea,
+            },
+            "price": {
+                "valorMin": valorMin,
+                "valorMax": valorMax,
+                "description": description 
+            },
+            "usageType": usage_type,
+            "features": features,
+            "Requests": especialRequests
         })
 
         if not success:
@@ -105,9 +128,7 @@ def save_on_firestore(session_id, search_criteria):
     try:
         doc_ref = db.collection("messages").document(session_id)
         data_to_store = {
-            "session_id": session_id,
-            "dados_imovel": search_criteria,
-            "timestamp": firestore.SERVER_TIMESTAMP
+            "preferences": search_criteria,
         }
         doc_ref.set(data_to_store, merge=True)
         print(f"💾 Critérios de busca salvos no Firestore para a sessão {session_id}")

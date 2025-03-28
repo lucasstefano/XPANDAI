@@ -1,0 +1,45 @@
+openapi: 3.0.0
+info:
+  title: User Information API
+  description: API to retrieve user's personal information based on a code. 
+  version: "1.0.0"
+servers:
+  - url: https://send-propeties-228950993976.us-central1.run.app
+paths:
+  /get_imoveis: # Path mantido, mas pode ser confuso se não for sobre imóveis
+    get:
+      summary: Retrieve information based on user code # Resumo ajustado
+      description: Fetches a title and description associated with a given user code.
+      operationId: getImoveis # ID mantido
+      parameters: # Usando query parameters para enviar o user_code com GET (padrão)
+        - name: user_code # Nome do parâmetro na URL (?user_code=...)
+          in: query # Indica que é um query parameter
+          required: true # Marcado como obrigatório
+          description: The code of the user to retrieve information for.
+          schema:
+            type: string
+            example: "USR1001" # Exemplo de user_code
+      # requestBody foi removido pois não é padrão para GET.
+      responses:
+        '200': # Resposta para sucesso (HTTP 200 OK)
+          description: Title and description retrieved successfully # Descrição da resposta
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  imovel_code: # Campo 'title' (ou 'titulo')
+                    type: string
+                    description: o codigo de id do imóvel
+                    example: "COD205" # Exemplo de título
+                  description: # Campo 'description' (completado)
+                    type: string
+                    description: detalhes do imóvel
+                    example: "Imóvel Apartamento Compacto, do São Paulo com 1 quartos, 1 banheiros e 0 vagas de garagem. Preço de aluguel: R$4500" # Exemplo de descrição
+                required: # Opcional: indicar quais campos são sempre retornados
+                  - imovel_code
+                  - description
+        '400': # Exemplo de resposta para erro (Bad Request)
+           description: Invalid user code supplied
+        '404': # Exemplo de resposta para não encontrado (Not Found)
+           description: User code not found

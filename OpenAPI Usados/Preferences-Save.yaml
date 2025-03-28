@@ -1,0 +1,102 @@
+openapi: 3.0.0
+info:
+  title: Registro de Critérios de Busca Imobiliária
+  version: 1.0.0
+  description: Envia os critérios confirmados pelo usuário para uma Cloud Function para registro/log.
+servers:
+  - url: https://register-properties-params-228950993976.us-central1.run.app
+paths:
+  # Endpoint da sua nova função, ajuste se necessário
+  /registrar-criterios:
+    post:
+      summary: Registra critérios de busca confirmados
+      operationId: registrarCriteriosBusca
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              description: Objeto contendo todos os critérios coletados e confirmados.
+              properties:
+                dialogflowSessionId:
+                  type: string
+                  description: ID completo da sessão do Dialogflow CX
+                transactionType: 
+                  type: string
+                propertyType:
+                  type: string
+                location:
+                  type: object
+                  properties:
+                    city:
+                      type: string
+                    state:
+                      type: string
+                    neighborhood:
+                      type: string
+                    address:
+                      type: string
+                    complement:
+                      type: string
+                    zone:
+                      type: string
+                bedroom:
+                  type: number
+                bathroom:
+                  type: number
+                suite:
+                  type: number  
+                floor:
+                  type: number  
+                unitFloor:
+                  type: number  
+                buildings:
+                  type: number  
+                garage:
+                  type: number               
+                area: 
+                  type: object
+                  properties:
+                     lotArea:
+                       type: number
+                     livingArea:
+                       type: number
+                price: 
+                  type: object
+                  properties:
+                     valorMin:
+                       type: number
+                     valorMax:
+                       type: number
+                     description:
+                       type: string
+                usageType:
+                  type: string 
+                features:
+                  type: array
+                  items:
+                    type: string
+                especialRequests:
+                  type: array
+                  items:
+                    type: string
+
+      responses:
+        '200':
+          description: Critérios registrados com sucesso.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+                  message:
+                    type: string
+                    example: Critérios registrados com ID 12345.
+        '400':
+          description: Erro nos dados dos critérios enviados.
+        '500':
+          description: Erro interno no servidor ao tentar registrar os critérios.

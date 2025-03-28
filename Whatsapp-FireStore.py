@@ -67,4 +67,3 @@ def save_message_to_firestore(sender_id, message):
     user_reference.set(message_data, merge=True)
 
     print(f"💾 Mensagem salva no Firestore para o usuário {sender_id}")
- v
