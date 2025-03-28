@@ -1,0 +1,384 @@
+<ListingDataFeed xmlns="http://www.vivareal.com/schemas/1.0/VRSync"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.vivareal.com/schemas/1.0/VRSync http://xml.vivareal.com/vrsync.xsd">
+    <Header>
+        <Provider>Infoideias Software</Provider>
+        <Email>sistema@infoideias.com.br</Email>
+        <ContactName>Suporte</ContactName>
+        <PublishDate>2025-03-05T18:13:50</PublishDate>
+        <Telephone>21-22140113</Telephone>
+    </Header>
+    <Listings>
+        <Listing>
+            <ListingID>COD123</ListingID>
+            <Title>
+                <![CDATA[ Apartamento : Padrão / Residencial / Recreio dos Bandeirantes ]]>
+            </Title>
+            <TransactionType>For Sale</TransactionType>
+            <PublicationType>STANDARD</PublicationType>
+            <DetailViewUrl>
+                <![CDATA[ http://www.teste.com.br/acessarlink/?codigo=COD123 ]]>
+            </DetailViewUrl>
+            <Media>
+                <Item medium="image" caption="img1" primary="true">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/1/img/1_1.jpg</Item>
+                <Item medium="image" caption="img2">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/1/img/1_2.jpg</Item>
+                <Item medium="image" caption="img14">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/1/img/1_14.jpg</Item>
+                <Item medium="image" caption="img15">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/1/img/1_15.jpg</Item>
+           
+            </Media>
+            <Details>
+                <UsageType>Residential</UsageType>
+                <PropertyType>Residential / Apartment</PropertyType>
+                <Description>
+                    <![CDATA[ Encante-se com este magnífico apartamento de 2 dormitórios, sendo 1 suíte, localizado em um condomínio de padrão Semi-Luxo. Com uma vaga de garagem disponível, este imóvel possui uma área total e útil de 90 m², perfeito para quem busca conforto e praticidade.&lt;br&gt; Com uma localização privilegiada de frente e uma linda fachada pintada, desfrute de uma vista livre e ensolarada pela manhã. O padrão do prédio também é Semi-Luxo, garantindo um ambiente sofisticado e acolhedor.&lt;br&gt; A infraestrutura variada do condomínio oferece interfone, portaria, piscina, bar na piscina, sauna, churrasqueira, quadra esportiva, academia de ginástica, salão de festas, play ground, estacionamento para visitantes, câmeras de vigilância e porteiro 24 horas, proporcionando conforto e segurança para toda a família.&lt;br&gt;-Cod:COD123 -Rev.05Mar ]]>
+                </Description>
+                <ListPrice currency="BRL">600000</ListPrice>
+                <LivingArea unit="square metres">90</LivingArea>
+                <PropertyAdministrationFee currency="BRL">1000</PropertyAdministrationFee>
+                <Iptu currency="BRL" period="Yearly">2000</Iptu>
+                <Bedrooms>2</Bedrooms>
+                <Bathrooms>2</Bathrooms>
+                <Suites>1</Suites>
+                <YearBuilt>2020</YearBuilt>
+                <Garage>1</Garage>
+                <Floors>11</Floors>
+                <Features>
+                    <Feature>Cooling</Feature>
+                    <Feature>Furnished</Feature>
+                    <Feature>Intercom</Feature>
+                    <Feature>Gym</Feature>
+                    <Feature>Elevator</Feature>
+                    <Feature>BBQ</Feature>
+                    <Feature>Party Room</Feature>
+                    <Feature>Game room</Feature>
+                    <Feature>Gourmet Area</Feature>
+                    <Feature>Playground</Feature>
+                    <Feature>Pool</Feature>
+                    <Feature>Sports Court</Feature>
+                    <Feature>Sauna</Feature>
+                    <Feature>Spa</Feature>
+                    <Feature>TV Security</Feature>
+                    <Feature>Pets Allowed</Feature>
+                </Features>
+            </Details>
+            <Location displayAddress="Street">
+                <Country abbreviation="BR">Brasil</Country>
+                <State abbreviation="RJ">
+                    <![CDATA[ Rio de Janeiro ]]>
+                </State>
+                <City>
+                    <![CDATA[ Rio de Janeiro ]]>
+                </City>
+                <Neighborhood>
+                    <![CDATA[ Recreio dos Bandeirantes ]]>
+                </Neighborhood>
+                <Address>
+                    <![CDATA[ Nome da Rua ]]>
+                </Address>
+                <StreetNumber>568</StreetNumber>
+                <Complement>Apto. 3258</Complement>
+                <PostalCode>22790-000</PostalCode>
+                <Latitude>-23.00000000000000</Latitude>
+                <Longitude>-43.00000000000000</Longitude>
+            </Location>
+            <ContactInfo>
+                <Name>
+                    <![CDATA[ More Muito Bem ]]>
+                </Name>
+                <Email>teste@gmail.com</Email>
+                <Website>www.teste.com.br</Website>
+            </ContactInfo>
+        </Listing>
+        <Listing>
+            <ListingID>VSAP20030</ListingID>
+            <Title>
+                <![CDATA[ Apartamento : Padrão / Residencial / Recreio dos Bandeirantes ]]>
+            </Title>
+            <TransactionType>For Sale</TransactionType>
+            <PublicationType>STANDARD</PublicationType>
+            <DetailViewUrl>
+                <![CDATA[ http://www.teste.com.br/acessarlink/?codigo=VSAP20030 ]]>
+            </DetailViewUrl>
+            <Media>
+                <Item medium="image" caption="img10">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/215/img/215_G1740757634.jpg</Item>
+                <Item medium="image" caption="img11">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/215/img/215_G1740757616.jpg</Item>
+            </Media>
+            <Details>
+                <UsageType>Residential</UsageType>
+                <PropertyType>Residential / Apartment</PropertyType>
+                <Description>
+                    <![CDATA[ Imóvel residencial do tipo Apartamento, com 3 dormitórios, sendo 1 suíte, e 1 vaga de garagem. Com padrão Semi-Luxo, localizado na posição frente, a fachada apresenta pintura impecável, proporcionando uma vista livre e ensolarada pela manhã.&lt;br&gt; O apartamento possui 70 m² de área total e 70 m² de área útil, proporcionando um ambiente confortável e aconchegante. O condomínio oferece uma infraestrutura variada, com interfone, portaria, piscina infantil, piscina, sauna, churrasqueira, quadra esportiva, academia de ginástica, salão de festas, play ground, câmeras de vigilância e porteiro 24 horas.&lt;br&gt; Com todos esses atrativos, este imóvel residencial é ideal para quem busca qualidade de vida, conforto e segurança em um ambiente moderno e bem estruturado. Agende uma visita e venha conhecer este excelente apartamento!&lt;br&gt;-Cod:VSAP20030 -Rev.05Mar ]]>
+                </Description>
+                <ListPrice currency="BRL">529000</ListPrice>
+                <LivingArea unit="square metres">70</LivingArea>
+                <PropertyAdministrationFee currency="BRL">1174</PropertyAdministrationFee>
+                <Iptu currency="BRL" period="Yearly">1219</Iptu>
+                <Bedrooms>2</Bedrooms>
+                <Bathrooms>2</Bathrooms>
+                <Suites>1</Suites>
+                <YearBuilt>2016</YearBuilt>
+                <Garage>1</Garage>
+                <Features>
+                    <Feature>Cooling</Feature>
+                    <Feature>Security Guard on Duty</Feature>
+                    <Feature>Intercom</Feature>
+                    <Feature>Gym</Feature>
+                    <Feature>BBQ</Feature>
+                    <Feature>Game room</Feature>
+                    <Feature>Gourmet Area</Feature>
+                    <Feature>Playground</Feature>
+                    <Feature>Pool</Feature>
+                    <Feature>Sports Court</Feature>
+                    <Feature>Sauna</Feature>
+                    <Feature>Spa</Feature>
+                    <Feature>Gourmet Balcony</Feature>
+                    <Feature>TV Security</Feature>
+                    <Feature>Pets Allowed</Feature>
+                </Features>
+            </Details>
+            <Location displayAddress="Street">
+                <Country abbreviation="BR">Brasil</Country>
+                <State abbreviation="RJ">
+                    <![CDATA[ Rio de Janeiro ]]>
+                </State>
+                <City>
+                    <![CDATA[ Rio de Janeiro ]]>
+                </City>
+                <Neighborhood>
+                    <![CDATA[ Recreio dos Bandeirantes ]]>
+                </Neighborhood>
+                <Address>
+                    <![CDATA[ Rua Teixeira Heizer ]]>
+                </Address>
+                <StreetNumber>1965</StreetNumber>
+                <Complement>Apto. 203 Bl. 7</Complement>
+                <PostalCode>22790-883</PostalCode>
+                <Latitude>-23.01975682265534</Latitude>
+                <Longitude>-43.51137003714126</Longitude>
+            </Location>
+            <ContactInfo>
+                <Name>
+                    <![CDATA[ More Muito Bem ]]>
+                </Name>
+                <Email>teste@gmail.com</Email>
+                <Website>www.teste.com.br</Website>
+            </ContactInfo>
+        </Listing>
+        <Listing>
+            <ListingID>VSAP20031</ListingID>
+            <Title>
+                <![CDATA[ Apartamento : Padrão / Residencial / Recreio dos Bandeirantes ]]>
+            </Title>
+            <TransactionType>For Sale</TransactionType>
+            <PublicationType>PREMIUM</PublicationType>
+            <DetailViewUrl>
+                <![CDATA[ http://www.teste.com.br/acessarlink/?codigo=VSAP20031 ]]>
+            </DetailViewUrl>
+            <Media>
+                <Item medium="image" caption="img10">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/214/img/214_G1740757634.jpg</Item>
+                <Item medium="image" caption="img11">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/214/img/214_G1740757616.jpg</Item>
+            </Media>
+            <Details>
+                <UsageType>Residential</UsageType>
+                <PropertyType>Residential / Apartment</PropertyType>
+                <Description>
+                    <![CDATA[ Encante-se por este incrível apartamento residencial de semi-luxo, localizado em uma posição privilegiada na frente do edifício, com vista livre e sol da manhã. Com 84m² de área útil e 884m² de área total, este imóvel conta com 1 sala ampla, 2 dormitórios, sendo 1 suíte, e 1 vaga de garagem.&lt;br&gt; A infraestrutura do imóvel inclui churrasqueira, ideal para momentos de lazer e descontração. Já o condomínio oferece uma variedade de opções de lazer e segurança, como interfone, portaria, piscina infantil, piscina adulto, sauna, churrasqueira, quadra esportiva, academia, playground, câmeras de vigilância e porteiro 24 horas.&lt;br&gt;-Cod:VSAP20031 -Rev.05Mar ]]>
+                </Description>
+                <ListPrice currency="BRL">647000</ListPrice>
+                <LivingArea unit="square metres">84</LivingArea>
+                <PropertyAdministrationFee currency="BRL">1300</PropertyAdministrationFee>
+                <Iptu currency="BRL" period="Yearly">3000</Iptu>
+                <Bedrooms>2</Bedrooms>
+                <Bathrooms>2</Bathrooms>
+                <Suites>1</Suites>
+                <YearBuilt>2018</YearBuilt>
+                <Garage>1</Garage>
+                <Features>
+                    <Feature>Cooling</Feature>
+                    <Feature>Security Guard on Duty</Feature>
+                    <Feature>Intercom</Feature>
+                    <Feature>Gym</Feature>
+                    <Feature>Garden Area</Feature>
+                    <Feature>BBQ</Feature>
+                    <Feature>Game room</Feature>
+                    <Feature>Gourmet Area</Feature>
+                    <Feature>Playground</Feature>
+                    <Feature>Pool</Feature>
+                    <Feature>Sports Court</Feature>
+                    <Feature>Sauna</Feature>
+                    <Feature>Spa</Feature>
+                    <Feature>Gourmet Balcony</Feature>
+                    <Feature>TV Security</Feature>
+                    <Feature>Pets Allowed</Feature>
+                </Features>
+            </Details>
+            <Location displayAddress="Street">
+                <Country abbreviation="BR">Brasil</Country>
+                <State abbreviation="RJ">
+                    <![CDATA[ Rio de Janeiro ]]>
+                </State>
+                <City>
+                    <![CDATA[ Rio de Janeiro ]]>
+                </City>
+                <Neighborhood>
+                    <![CDATA[ Recreio dos Bandeirantes ]]>
+                </Neighborhood>
+                <Address>
+                    <![CDATA[ Rua Teixeira Heizer ]]>
+                </Address>
+                <StreetNumber>1965</StreetNumber>
+                <Complement>Apto. 608 Bl. 3</Complement>
+                <PostalCode>22790-883</PostalCode>
+                <Latitude>0</Latitude>
+                <Longitude>0</Longitude>
+            </Location>
+            <ContactInfo>
+                <Name>
+                    <![CDATA[ More Muito Bem ]]>
+                </Name>
+                <Email>teste@gmail.com</Email>
+                <Website>www.teste.com.br</Website>
+            </ContactInfo>
+        </Listing>
+        <Listing>
+            <ListingID>COD5684</ListingID>
+            <Title>
+                <![CDATA[ Casa em Condomínio : Duplex / Residencial / Barra da Tijuca ]]>
+            </Title>
+            <TransactionType>For Sale</TransactionType>
+            <PublicationType>STANDARD</PublicationType>
+            <DetailViewUrl>
+                <![CDATA[ http://www.teste.com.br/acessarlink/?codigo=COD5684 ]]>
+            </DetailViewUrl>
+            <Media>
+                <Item medium="image" caption="img11">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/1234/img/foto_11.jpg</Item>
+                <Item medium="image" caption="img29">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/1234/img/foto_29.jpg</Item>
+            </Media>
+            <Details>
+                <UsageType>Residential</UsageType>
+                <PropertyType>Residential / Home residencial</PropertyType>
+                <Description>
+                    <![CDATA[ Encante-se com esta magnífica Casa em Condomínio de luxo, localizada na frente do condomínio, com fachada em pintura e vista livre. Com área total de 360 m² e área útil de 150 m², o imóvel dispõe de 5 dormitórios, sendo 2 suítes, e 1 vagas de garagem para seu conforto e comodidade.&lt;br&gt; O imóvel ainda oferece uma infraestrutura básica com piscina e churrasqueira, ideal para momentos de lazer e descontração. Já o condomínio conta com uma variedade de comodidades, incluindo interfone, portaria, piscina infantil, piscina, churrasqueira, câmeras de vigilância e porteiro 24 horas, garantindo sua segurança e tranquilidade.&lt;br&gt; Desfrute de uma ampla área externa com piscina e churrasqueira para reunir amigos e familiares, além de desfrutar do sol da manhã e tarde. Esta é a oportunidade perfeita para viver com qualidade e conforto em um ambiente seguro e agradável. Agende uma visita e apaixone-se por este incrível imóvel!&lt;br&gt;-Cod:COD5684 -Rev.05Mar ]]>
+                </Description>
+                <ListPrice currency="BRL">3470000</ListPrice>
+                <LivingArea unit="square metres">150</LivingArea>
+                <PropertyAdministrationFee currency="BRL">1200</PropertyAdministrationFee>
+                <Iptu currency="BRL" period="Yearly">800</Iptu>
+                <Bedrooms>5</Bedrooms>
+                <Bathrooms>3</Bathrooms>
+                <Suites>2</Suites>
+                <YearBuilt>2022</YearBuilt>
+                <Garage>1</Garage>
+                <Features>
+                    <Feature>Cooling</Feature>
+                    <Feature>Security Guard on Duty</Feature>
+                    <Feature>Intercom</Feature>
+                    <Feature>Garden Area</Feature>
+                    <Feature>BBQ</Feature>
+                    <Feature>Gourmet Area</Feature>
+                    <Feature>Pool</Feature>
+                    <Feature>Gourmet Balcony</Feature>
+                    <Feature>TV Security</Feature>
+                    <Feature>Pets Allowed</Feature>
+                </Features>
+            </Details>
+            <Location displayAddress="Street">
+                <Country abbreviation="BR">Brasil</Country>
+                <State abbreviation="RJ">
+                    <![CDATA[ Rio de Janeiro ]]>
+                </State>
+                <City>
+                    <![CDATA[ Rio de Janeiro ]]>
+                </City>
+                <Neighborhood>
+                    <![CDATA[ Barra da Tijuca ]]>
+                </Neighborhood>
+                <Address>
+                    <![CDATA[ Nome da Rua ]]>
+                </Address>
+                <StreetNumber>9584</StreetNumber>
+                <Complement>Casa 125</Complement>
+                <PostalCode>22793-000</PostalCode>
+                <Latitude>-22.00000000000000</Latitude>
+                <Longitude>-43.00000000000000</Longitude>
+            </Location>
+            <ContactInfo>
+                <Name>
+                    <![CDATA[ More Muito Bem ]]>
+                </Name>
+                <Email>teste@gmail.com</Email>
+                <Website>www.teste.com.br</Website>
+            </ContactInfo>
+        </Listing>
+        <Listing>
+            <ListingID>COD1234</ListingID>
+            <Title>
+                <![CDATA[ Cobertura - Duplex / Residencial / Barra da Tijuca ]]>
+            </Title>
+            <TransactionType>For Sale</TransactionType>
+            <PublicationType>STANDARD</PublicationType>
+            <DetailViewUrl>
+                <![CDATA[ http://www.teste.com.br/acessarlink/?codigo=COD1234 ]]>
+            </DetailViewUrl>
+            <Media>
+               <Item medium="image" caption="img15">https://fotos.infoideias.net/midasweb/arquivos/0/imoveis/fotos/48/img/foto15.jpg</Item>
+            </Media>
+            <Details>
+                <UsageType>Residential</UsageType>
+                <PropertyType>Residential / Home residencial</PropertyType>
+                <Description>
+                    <![CDATA[ Excelente oportunidade! Cobertura de alto padrão localizada em um condomínio semi-luxo na Frente, com vista livre e sol da Manhã/Tarde. O imóvel possui uma espaçosa sala, 3 dormitórios, sendo 2 suíte, e 1 vagas de garagem.&lt;br&gt; Com 120 m² de área total e 120 m² de área útil, essa cobertura oferece uma infraestrutura variada no condomínio, com interfone, portaria, piscina infantil, piscina, sauna, churrasqueira, academia de ginástica, salão de festas, câmeras de vigilância e porteiro 24 horas.&lt;br&gt;-Cod:COD123 -Rev.05Mar ]]>
+                </Description>
+                <ListPrice currency="BRL">800000</ListPrice>
+                <LivingArea unit="square metres">120</LivingArea>
+                <PropertyAdministrationFee currency="BRL">1500</PropertyAdministrationFee>
+                <Iptu currency="BRL" period="Yearly">2000</Iptu>
+                <Bedrooms>3</Bedrooms>
+                <Bathrooms>4</Bathrooms>
+                <Suites>2</Suites>
+                <YearBuilt>2006</YearBuilt>
+                <Garage>1</Garage>
+                <Floors>15</Floors>
+                <Features>
+                    <Feature>Security Guard on Duty</Feature>
+                    <Feature>Intercom</Feature>
+                    <Feature>Gym</Feature>
+                    <Feature>Elevator</Feature>
+                    <Feature>BBQ</Feature>
+                    <Feature>Party Room</Feature>
+                    <Feature>Gourmet Area</Feature>
+                    <Feature>Pool</Feature>
+                    <Feature>Sauna</Feature>
+                    <Feature>TV Security</Feature>
+                    <Feature>Pets Allowed</Feature>
+                </Features>
+            </Details>
+            <Location displayAddress="Street">
+                <Country abbreviation="BR">Brasil</Country>
+                <State abbreviation="RJ">
+                    <![CDATA[ Rio de Janeiro ]]>
+                </State>
+                <City>
+                    <![CDATA[ Rio de Janeiro ]]>
+                </City>
+                <Neighborhood>
+                    <![CDATA[ Barra da Tijuca ]]>
+                </Neighborhood>
+                <Address>
+                    <![CDATA[ Nome da Rua ]]>
+                </Address>
+                <StreetNumber>987</StreetNumber>
+                <Complement/>
+                <PostalCode>22790-000</PostalCode>
+                <Latitude>-23.0000000</Latitude>
+                <Longitude>-43.0000000</Longitude>
+            </Location>
+            <ContactInfo>
+                <Name>
+                    <![CDATA[ More Muito Bem ]]>
+                </Name>
+                <Email>teste.teste@gmail.com</Email>
+                <Website>www.teste.com.br</Website>
+            </ContactInfo>
+        </Listing>
+    </Listings>
+</ListingDataFeed>
