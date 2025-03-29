@@ -65,12 +65,68 @@ def get_messages(document_id):
 
         if doc.exists:
             serialized_doc = serialize_document(doc.to_dict())
+            preferences = serialized_doc.get("preferences", {})
+
+            transactionType = preferences.get("transactionType", "") 
+            propertyType = preferences.get("propertyType", "") 
+            usageType = preferences.get("usageType", "") 
+
+            location = preferences.get("location", "") 
+            city = location.get("city", "") 
+            state = location.get("state", "")
+            address = location.get("address", "")
+            neighborhood = location.get("neighborhood", "")
+            complement = location.get("complement", "")
+            zone = location.get("zone", "")
+
+            bedroom = preferences.get("bedroom", "")
+            bathroom = preferences.get("bathroom", "")
+            garage = preferences.get("garage", "")
+            suite = preferences.get("suite", "")
+            unitFloor = preferences.get("unitFloor", "")
+            floor = preferences.get("floor", "")
+            buildings = preferences.get("buildings", "")
+
+            area = preferences.get("area", "")
+            livingArea = area.get("livingArea", "")
+            lotArea = area.get("lotArea", "")
+
+            price = preferences.get("price", "")
+            valorMax = price.get("valorMax", "")
+            valorMin = price.get("valorMin", "")
+
+            features = preferences.get("features", "")
+            requests = preferences.get("Requests", "")
 
             # Buscar imóveis já visualizados
             visualized_imoveis = get_visualized_imoveis(session_id)
 
             # Consultar BigQuery excluindo os imóveis já vistos
-            listings = query_bigquery(visualized_imoveis)
+            listings = query_bigquery(
+                visualized_imoveis,
+                transactionType,
+                propertyType,
+                usageType,
+                city,
+                state,
+                address,
+                neighborhood,
+                complement,
+                zone,
+                bedroom,
+                bathroom,
+                garage,
+                suite,
+                unitFloor,
+                floor,
+                buildings,
+                livingArea,
+                lotArea,
+                valorMax,
+                valorMin,
+                features,
+                requests,
+            )
 
             return json.dumps(listings, indent=2)
         else:
